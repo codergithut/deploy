@@ -22,6 +22,7 @@ public class DeployVerticle extends AbstractVerticle {
             // 所有的请求都会调用这个处理器处理
             HttpServerResponse response = routingContext.response();
             response.putHeader("content-type", "text/plain");
+            System.out.println("we get data");
 
             // 写入响应并结束处理
             response.end("Hello World from Vert.x-Web!");
