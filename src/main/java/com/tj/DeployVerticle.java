@@ -5,6 +5,7 @@ import io.vertx.core.http.HttpMethod;
 import io.vertx.core.http.HttpServer;
 import io.vertx.core.http.HttpServerResponse;
 import io.vertx.ext.web.Router;
+import io.netty.util.internal.MacAddressUtil;
 
 /**
  * Created by tianjian on 2020/1/8.
@@ -25,7 +26,7 @@ public class DeployVerticle extends AbstractVerticle {
             // 写入响应并结束处理
             response.end("Hello World from Vert.x-Web!");
         });
-        server.requestHandler(router::accept).listen(7200, "127.0.0.1");
+        server.requestHandler(router::accept).listen(7200, "0.0.0.0");
     }
 
 }
