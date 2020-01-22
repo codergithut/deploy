@@ -17,7 +17,7 @@ public class DeployVerticle extends AbstractVerticle {
 
         Router router = Router.router(vertx);
 
-        router.route(HttpMethod.POST,"/deploy").handler(routingContext -> {
+        router.route(HttpMethod.GET,"/deploy").handler(routingContext -> {
 
             // 所有的请求都会调用这个处理器处理
             HttpServerResponse response = routingContext.response();
@@ -26,7 +26,7 @@ public class DeployVerticle extends AbstractVerticle {
             // 写入响应并结束处理
             response.end("Hello World from Vert.x-Web!");
         });
-        server.requestHandler(router::accept).listen(7200, "0.0.0.0");
+        server.requestHandler(router::accept).listen(8082, "0.0.0.0");
     }
 
 }
