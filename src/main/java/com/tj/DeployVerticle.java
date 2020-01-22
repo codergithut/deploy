@@ -34,7 +34,7 @@ public class DeployVerticle extends AbstractVerticle {
             response.putHeader("content-type", "text/plain");
             System.out.println("we get data");
             try {
-                exec("nohup sh /root/jar/task/starup.sh &");
+                System.out.println(exec("nohup ./root/jar/task/starup.sh &"));
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
