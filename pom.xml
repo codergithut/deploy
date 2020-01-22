@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <vertx.version>3.4.2</vertx.version>
+        <vertx.version>3.5.4</vertx.version>
         <main.class>io.example.Main</main.class>
     </properties>
 
