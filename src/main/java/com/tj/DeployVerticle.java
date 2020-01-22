@@ -25,7 +25,7 @@ public class DeployVerticle extends AbstractVerticle {
             // 写入响应并结束处理
             response.end("Hello World from Vert.x-Web!");
         });
-        server.requestHandler(router::accept).listen(10000);
+        server.requestHandler(router::accept).listen(7200);
     }
 
 }
