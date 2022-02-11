@@ -23,7 +23,7 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-web</artifactId>
-            <version>3.4.2</version>
+            <version>3.9.4</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.diffplug.guava/guava-cache -->
